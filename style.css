@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #333333;
+    --hover-bg: #1a1a1a; /* Background color on hover */
+    --accent-color: #ff7f50; /* Coral color as an accent */
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid white;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(9,121,94,1) 40%, rgba(0,212,255,1) 100%);
+}
+
+body:hover {
+    border-color: var(--gray);
+}
+
+.container {
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* .container:hover {
+    background-color: var(--hover-bg);
+} */
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-3 h1 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+form {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+input {
+    font-size: 120%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--gray);
+}
+
+.emoji {
+    font-size: 300%;
+    width: 8rem;
+    max-width: 8rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.emoji:hover {
+    transform: scale(1.1);
+}
+
+.aliases {
+    text-transform: capitalize;
+    font-size: 125%;
+    transition: color 0.3s ease-in-out;
+}
+
+.aliases:hover {
+    color: black;
+}
+
+.desc {
+    font-size: 125%;
+    transition: color 0.3s ease-in-out;
+}
+
+.desc:hover::first-letter {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr, td {
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    transition: background-color 0.3s ease-in-out;
+    padding: 15px;
+    font-size: 25px;
+}
+
+tr:hover {
+    background-color: var(--hover-bg);
+}
